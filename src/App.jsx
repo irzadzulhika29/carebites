@@ -44,7 +44,8 @@ import ProfileLS from './pages/dashboard/lembagasosial/ProfileLS';
 import AccountVerifFormLS from './pages/dashboard/lembagasosial/AccountVerifFormLS';
 import EditProfileLS from './pages/dashboard/lembagasosial/EditProfileLS';
 import UpdateCharityLS from './pages/dashboard/lembagasosial/UpdateCharityLS';
-import CreateCharityLS from './pages/dashboard/lembagasosial/CreateCharityLS'
+import CreateCharityLS from './pages/dashboard/lembagasosial/CreateCharityLS';
+import Notif from './pages/dashboard/Notif';
 
 import AccountVerifForm from './pages/dashboard/AccountVerifForm'
 
@@ -106,6 +107,7 @@ const App = () => {
           <Route path="/verif-form-ls" element={<AccountVerifFormLS />} />
           <Route path="/edit-profil-ls" element={<EditProfileLS />} />
           <Route path="/create-charity-ls" element={<CreateCharityLS />} />
+          <Route path="/notif" element={<Notif />} />
 
 
         </Routes>

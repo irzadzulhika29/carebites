@@ -8,7 +8,6 @@ const NavbarLanding = () => {
 
     const menuItems = [
         { name: "Home", path: "/", current: true },
-        { name: "Course", path: "#", current: false },
         { name: "About Us", path: "#", current: false },
         { name: "Article", path: "#", current: false },
         { name: "Contact", path: "#", current: false },

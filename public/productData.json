@@ -2,8 +2,8 @@
     {
         "id": 1,
         "owner": "Sushi Tei",
-        "image_url": "https://www.sushitei.co.id/wp-content/uploads/2021/07/Salmon-Sushi-Roll.jpg",
-        "photoProfile": "https://play-lh.googleusercontent.com/Uy5XRQlrTRRcPPwEhJSqCNWFbRCYCVwxmU6Xj_kxuTHNPcaXKZTdPQCGfSKGwNUJXw",
+        "image_url": "https://media-cdn.tripadvisor.com/media/photo-p/14/11/b5/e7/20170409-190555-largejpg.jpg",
+        "photoProfile": "https://images.bisnis.com/posts/2022/08/31/1572659/images63_copy_1000x667.jpeg",
         "productName": "Salmon Sushi Roll",
         "location": "Jakarta",
         "address": "Jl. Sudirman No.1, Jakarta",
@@ -17,8 +17,8 @@
     {
         "id": 2,
         "owner": "Bebek Tepi Sawah",
-        "photoProfile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH7sUHK3cF3FKEHNc7NrqNxGbKuLoCcQWJ7Q&usqp=CAU",
-        "image_url": "https://asset.kompas.com/crops/MfjgKblJjC8Nw2PQZHQQlgMRTIQ=/0x0:1000x667/750x500/data/photo/2022/03/04/62220cb1b2ebd.jpg",
+        "photoProfile": "https://beachwalkbali.com/_next/image?url=https%3A%2F%2Fcms.beachwalkbali.com%2Fuploads%2FLOGO_BEBEK_TEPI_SAWAH_5c6cec47c5.jpeg&w=640&q=75",
+        "image_url": "https://asset-2.tstatic.net/travel/foto/bank/images/bebek-tepi-sawah_20160825_140229.jpg",
         "productName": "Bebek Goreng Sambal",
         "location": "Bali",
         "address": "Jl. Raya Goa Gajah, Ubud",
@@ -32,8 +32,8 @@
     {
         "id": 3,
         "owner": "Sate Khas Senayan",
-        "photoProfile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXt_QL9Nbq8SIgIZCJgXKEbQWEzWA3-9MFAA&usqp=CAU",
-        "image_url": "https://asset.kompas.com/crops/UBIaVjhZxllpHTPvzR1NAx9qwP0=/0x0:1000x667/750x500/data/photo/2022/04/24/62650aab7ca6f.jpg",
+        "photoProfile": "https://guide.horego.com/wp-content/uploads/2024/05/Menu-Sate-Khas-Senayan-2024.webp",
+        "image_url": "https://media-cdn.tripadvisor.com/media/photo-s/18/c6/1a/aa/picture-1565578835-largejpg.jpg",
         "productName": "Sate Ayam Madura",
         "location": "Jakarta",
         "address": "Jl. Asia Afrika No.8, Jakarta",
@@ -47,8 +47,8 @@
     {
         "id": 4,
         "owner": "Gudeg Yu Djum",
-        "photoProfile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfA8Qp5nWX0Pq4W1GXgp2HWwI3xjLcTp9yXA&usqp=CAU",
-        "image_url": "https://asset.kompas.com/crops/0n_aqSNLbCPYgwrMYAZVOQqWGEk=/0x0:1000x667/750x500/data/photo/2022/09/16/63244a6e3ca91.jpg",
+        "photoProfile": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8VnKxgqZVTaZaJqsDLvd3OQwGFOrqZ79BLQ&s",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf02eRCXeVM4d_U-0vD1oJWrUIqesDohewCQ&s",
         "productName": "Gudeg Komplit",
         "location": "Yogyakarta",
         "address": "Jl. Wijilan No.31, Yogyakarta",

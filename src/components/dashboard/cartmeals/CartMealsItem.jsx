@@ -1,41 +1,38 @@
 const CartMealsItem = ({ item, onRemove, onClick }) => {
-  const formatPrice = (price) => {
-    return `Rp${Number(price).toLocaleString('id-ID')}`;
-  };
+  const formatPrice = (price) => `Rp${Number(price).toLocaleString('id-ID')}`;
 
   return (
     <div 
       onClick={onClick}
-      className="flex items-center justify-between bg-white shadow-md p-3 rounded-md hover:shadow-lg transition-all duration-200 cursor-pointer"
+      className="bg-white shadow-md rounded-lg p-4 mb-4 hover:shadow-lg transition-all duration-300 cursor-pointer"
     >
-      {/* Product Image and Details */}
-      <div className="flex items-center gap-4">
-        <img
-          src={item.image_url}
-          alt={item.productName}
-          className="w-20 h-20 object-cover rounded"
-        />
-        <div>
-          <h3 className="font-bold">{item.productName}</h3>
-          <p className="text-sm text-gray-600">
-            {item.quantity} x {formatPrice(item.price)}
-          </p>
-          <p className="text-sm text-gray-500">
-            Total: {formatPrice(item.price * item.quantity)}
-          </p>
+      <div className="flex items-center justify-between">
+        <div className="flex items-center space-x-4">
+          <img
+            src={item.image_url}
+            alt={item.productName}
+            className="w-24 h-24 object-cover rounded-md"
+          />
+          <div>
+            <h3 className="font-bold text-lg mb-1">{item.productName}</h3>
+            <p className="text-sm text-gray-600 mb-1">
+              {item.quantity} x {formatPrice(item.price)}
+            </p>
+            <p className="text-sm font-semibold text-green-600">
+              Total: {formatPrice(item.price * item.quantity)}
+            </p>
+          </div>
         </div>
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            onRemove(item.id);
+          }}
+          className="text-white bg-red-500 hover:bg-red-600 px-3 py-1 rounded-full text-sm transition-colors duration-200"
+        >
+          Hapus
+        </button>
       </div>
-
-      {/* Remove Button */}
-      <button
-        onClick={(e) => {
-          e.stopPropagation(); // Prevent triggering parent onClick
-          onRemove(item.id);
-        }}
-        className="text-red-500 hover:text-red-700 transition-colors duration-200"
-      >
-        Hapus
-      </button>
     </div>
   );
 };

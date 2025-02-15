@@ -8,7 +8,7 @@ const Sidebar = () => {
 
     const navItems = [
         { to: "/home", icon: "house", label: "Home", patterns: ['/home'] },
-        { to: "/grab-meals", icon: "utensils", label: "Grab Meals", patterns: ['/grab-meals', '/product', '/payment', '/payment-product'] },
+        { to: "/grab-meals", icon: "utensils", label: "Grab Meals", patterns: ['/grab-meals','/cart',    '/product', '/payment', '/payment-product'] },
         { to: "/share-meals", icon: "share", label: "Share Meals", patterns: ['/share-meals', '/share-meals-form'] },
         { to: "/charity-campaign", icon: "heart", label: "Charity Campaign", patterns: ['/charity-campaign', '/charity-detail', '/campaign-form', '/charity-transaction', '/payment-charity'] },
         { to: "/blog", icon: "newspaper", label: "Blog & Article", patterns: ['/blog', '/article','/article-form'] },

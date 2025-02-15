@@ -12,7 +12,7 @@ const SidebarLS = () => {
     };
 
     const ROUTE_PATTERNS = {
-        HOME: ['/lembaga-sosial', '/verif-form-ls'], // Cocok untuk halaman utama
+        HOME: ['/lembaga-sosial', '/verif-form-ls','/notif'], // Cocok untuk halaman utama
         CHARITY: ['/charitycampaign-ls', '/update-charity-ls', '/update-charity-form-ls','/create-charity-ls'], // Cocok untuk halaman charity campaign dan update
         PROFILE: ['/profile-ls', '/edit-profil-ls'] // Cocok hanya untuk halaman profil
     };

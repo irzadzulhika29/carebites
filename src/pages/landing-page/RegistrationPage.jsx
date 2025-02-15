@@ -1,5 +1,5 @@
 import NavbarLanding from "../../components/landingpage/NavbarLanding"
-import RegistImage from "../../assets/img/download.png"
+import RegistImage from "../../assets/img/regist.png"
 import { Link } from "react-router-dom"
 import { motion } from 'framer-motion';
 import { useState } from "react"
@@ -211,10 +211,41 @@ const RegistrationPage = () => {
                                 />
                             </motion.div>
 
+                            <motion.div
+                                className="space-y-1"
+                                initial={{ opacity: 0, x: -20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ delay: 1.2 }}
+                            >
+                                <label className="text-sm font-medium text-gray-700">Verification Code</label>
+                                <div className="flex space-x-2">
+                                    <motion.input
+                                        variants={inputVariants}
+                                        whileFocus="focus"
+                                        whileTap="tap"
+                                        className='flex-grow p-2 text-sm rounded-full border border-gray-300 focus:ring-2 focus:ring-[#45c517] focus:border-transparent transition-all outline-none'
+                                        type="text"
+                                        name="verificationCode"
+                                        value={formData.verificationCode}
+                                        onChange={handleChange}
+                                        placeholder='Enter verification code'
+                                    />
+                                    <motion.button
+                                        whileHover={{ scale: 1.02 }}
+                                        whileTap={{ scale: 0.98 }}
+                                        className='px-4 py-2 bg-[#45c517] rounded-full text-white font-semibold
+                                        hover:bg-[#3ba113] transform transition-all duration-200
+                                        focus:ring-4 focus:ring-[#45c517] focus:ring-opacity-50'
+                                    >
+                                        Send Code
+                                    </motion.button>
+                                </div>
+                            </motion.div>
+
                             <motion.button
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 1.2 }}
+                                transition={{ delay: 1.3 }}
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
                                 className='w-full bg-[#45c517] rounded-full py-2 text-white font-semibold
@@ -228,17 +259,47 @@ const RegistrationPage = () => {
 
                     <motion.div
                         variants={imageVariants}
-                        className='hidden md:flex md:flex-col items-center justify-center w-1/2 bg-[#45c517] p-8'
+                        className="hidden md:flex md:flex-col items-center justify-center w-1/2 bg-gradient-to-br from-gray-50 to-gray-200 p-12 relative overflow-hidden"
                     >
-                        <h1 className="text-3xl font-semibold text-center text-white mb-4">Let's join us!</h1>
-                        <h1 className="text-3xl font-semibold text-center text-white mb-4">Be part of our community</h1>
-                        <motion.img
-                            whileHover={{ scale: 1.05 }}
-                            transition={{ duration: 0.3 }}
-                            className='rounded-2xl p-10 object-cover w-full max-h-[80vh] '
-                            src={RegistImage}
-                            alt="Registration Illustration"
-                        />
+                        <div className="relative z-10 text-center space-y-4 mb-8">
+                            <motion.h1
+                                initial={{ opacity: 0, y: -20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6 }}
+                                className="text-5xl font-bold text-[#45c517]"
+                            >
+                                Join Us!
+                            </motion.h1>
+                            <motion.h2
+                                initial={{ opacity: 0, y: -20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6, delay: 0.2 }}
+                                className="text-3xl font-semibold text-[#3ba113]"
+                            >
+                                Become part of our community
+                            </motion.h2>
+                        </div>
+
+                        <motion.div
+                            className="relative w-full max-w-3xl"
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.8 }}
+                        >
+                            <motion.img
+                                whileHover={{
+                                    scale: 1.05,
+                                    transition: {
+                                        type: "spring",
+                                        stiffness: 300
+                                    }
+                                }}
+                                className="rounded-3xl w-full max-h-[80vh] object-cover"
+                                src={RegistImage}
+                                alt="Join Our Community"
+                                loading="eager"
+                            />
+                        </motion.div>
                     </motion.div>
                 </motion.div>
             </section>

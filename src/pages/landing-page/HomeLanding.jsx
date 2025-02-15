@@ -3,6 +3,8 @@ import { HiMenu, HiX } from 'react-icons/hi';
 import { FaHandHoldingHeart, FaUtensils, FaRecycle, FaHandshake, FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import NavbarLanding from '../../components/landingpage/NavbarLanding';
+import { Link } from 'react-router-dom';
+
 
 const HomeLanding = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,14 +38,16 @@ const HomeLanding = () => {
                 <p className="text-lg mb-8 text-gray-600 max-w-lg">
                   Join us in reducing food waste and helping those in need. Together we can make a difference.
                 </p>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-8 py-3 bg-[#45c517] text-white rounded-full shadow-lg hover:bg-[#3da414] hover:shadow-xl transition-all duration-200 flex items-center gap-2 mx-auto md:mx-0"
-                >
-                  Donate Now
-                  <FaArrowRight />
-                </motion.button>
+                <Link to="/charity-campaign ">
+  <motion.button
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="px-8 py-3 bg-[#45c517] text-white rounded-full shadow-lg hover:bg-[#3da414] hover:shadow-xl transition-all duration-200 flex items-center gap-2 mx-auto md:mx-0"
+  >
+    Donate Now
+    <FaArrowRight />
+  </motion.button>
+</Link>
               </div>
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
